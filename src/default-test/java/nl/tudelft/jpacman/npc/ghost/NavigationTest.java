@@ -66,9 +66,7 @@ class NavigationTest {
      */
     @Test
     void testNoShortestPath() {
-        Board b = parser
-            .parseMap(Lists.newArrayList("#####", "# # #", "#####"))
-            .getBoard();
+        Board b = parser.parseMap(Lists.newArrayList("#####", "# # #", "#####")).getBoard();
         Square s1 = b.squareAt(1, 1);
         Square s2 = b.squareAt(3, 1);
         List<Direction> path = Navigation
